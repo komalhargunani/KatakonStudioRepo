@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1_LoginSuperadmin</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>87e8fac4-7632-49f5-8949-1ddd4dc56c59</testCaseGuid>
+</TestCaseEntity>
