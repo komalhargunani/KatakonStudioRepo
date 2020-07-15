@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Login" time="40.776" tests="1" failures="0" errors="0">
+   <testsuite name="Login" tests="1" failures="0" errors="0" time="40.776" timestamp="2020-07-14 14:56:06" hostname="komalh - ULTP689.synerzipune.local" id="Test Suites/Login/Login">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\komalh\\git\\KatakonStudioRepo\\Reports\\20200714_145602\\Login\\Login\\20200714_145602"/>
+         <property name="logFiles" value="C:\\Users\\komalh\\git\\KatakonStudioRepo\\Reports\\20200714_145602\\Login\\Login\\20200714_145602\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="komalh - ULTP689.synerzipune.local"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.5.5.1"/>
+         <property name="browser" value="Chrome 83.0.4103.116"/>
+         <property name="hostAddress" value="192.168.0.106"/>
+         <property name="sessionId" value="121b38e9ee539fcbb69b585cb7f8829a"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=\&quot;\&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Login/TC1_LoginAccountOwner" time="40.078" classname="Test Cases/Login/TC1_LoginAccountOwner" status="PASSED">
+         <system-out><![CDATA[2020-07-14 14:56:06 - [TEST_CASE][PASSED] - Test Cases/Login/TC1_LoginAccountOwner: Test Cases/Login/TC1_LoginAccountOwner
+
+2020-07-14 14:56:07 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-07-14 14:56:07 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-07-14 14:56:07 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-07-14 14:56:13 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-07-14 14:56:13 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://testconnect.lrsus.com' successfully
+
+2020-07-14 14:56:15 - [MESSAGE][PASSED] - Navigate to 'https://testconnect.lrsus.com' successfully
+
+2020-07-14 14:56:15 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/TC2_LoginAccountOwner/Page_LRS Connect/input_Email_j_username"), Username): Text 'komal.hargunani@synerzip.com' is set on object 'Object Repository/TC2_LoginAccountOwner/Page_LRS Connect/input_Email_j_username'
+
+2020-07-14 14:56:29 - [MESSAGE][PASSED] - Text 'komal.hargunani@synerzip.com' is set on object 'Object Repository/TC2_LoginAccountOwner/Page_LRS Connect/input_Email_j_username'
+
+2020-07-14 14:56:29 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/TC2_LoginAccountOwner/Page_LRS Connect/input_Password_j_password"), Password): Text 'Komal@123' is set on object 'Object Repository/TC2_LoginAccountOwner/Page_LRS Connect/input_Password_j_password'
+
+2020-07-14 14:56:33 - [MESSAGE][PASSED] - Text 'Komal@123' is set on object 'Object Repository/TC2_LoginAccountOwner/Page_LRS Connect/input_Password_j_password'
+
+2020-07-14 14:56:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/TC2_LoginAccountOwner/Page_LRS Connect/button_Login")): Object: 'Object Repository/TC2_LoginAccountOwner/Page_LRS Connect/button_Login' is clicked on
+
+2020-07-14 14:56:40 - [MESSAGE][PASSED] - Object: 'Object Repository/TC2_LoginAccountOwner/Page_LRS Connect/button_Login' is clicked on
+
+2020-07-14 14:56:40 - [TEST_STEP][PASSED] - getText(findTestObject("TC2_LoginAccountOwner/Page_LRS Connect/Page_LRS Connect/span_komal Add Test connect"), STOP_ON_FAILURE): Text of object 'Object Repository/TC2_LoginAccountOwner/Page_LRS Connect/Page_LRS Connect/span_komal Add Test connect' is: 'komal Add Test connect'
+
+2020-07-14 14:56:45 - [MESSAGE][PASSED] - Text of object 'Object Repository/TC2_LoginAccountOwner/Page_LRS Connect/Page_LRS Connect/span_komal Add Test connect' is: 'komal Add Test connect'
+
+2020-07-14 14:56:45 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-07-14 14:56:46 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-07-14 14:56:06 - [TEST_SUITE][PASSED] - Login: Test Cases/Login/TC1_LoginAccountOwner]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

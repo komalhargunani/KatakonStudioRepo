@@ -21,11 +21,15 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://testconnect.lrsus.com/')
 
-WebUI.setText(findTestObject('Object Repository/TC1_LoginSuperadmin/Page_LRS Connect/input_Email_j_username'), Username)
+WebUI.setText(findTestObject('Object Repository/Search_Location/Page_LRS Connect/input_Email_j_username'), 'Komal.hargunani@synerzip.com')
 
-WebUI.setText(findTestObject('Object Repository/TC1_LoginSuperadmin/Page_LRS Connect/input_Password_j_password'), Password)
+WebUI.setEncryptedText(findTestObject('Object Repository/Search_Location/Page_LRS Connect/input_Password_j_password'), 'PN4yry2COwt0rnmBLL9Fhg==')
 
-WebUI.click(findTestObject('Object Repository/TC1_LoginSuperadmin/Page_LRS Connect/button_Login'))
+WebUI.click(findTestObject('TC2_LoginAccountOwner/Page_LRS Connect/button_Login'))
 
-WebUI.closeBrowser()
+WebUI.setText(findTestObject('Object Repository/Search_Location/Page_LRS Connect/input_Sign Out_mdSearchBox'), 'NFC-QR')
+
+WebUI.sendKeys(findTestObject('Search_Location/Page_LRS Connect/input_Sign Out_mdSearchBox'), Keys.chord(Keys.ENTER))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Search_Location/Page_LRS Connect/span_NFC-QR'), 'NFC-QR')
 

@@ -17,15 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Location/SearchLocation'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://testconnect.lrsus.com/')
+WebUI.click(findTestObject('Object Repository/GoToList/Page_LRS Connect/a_List'))
 
-WebUI.setText(findTestObject('Object Repository/TC1_LoginSuperadmin/Page_LRS Connect/input_Email_j_username'), Username)
+WebUI.click(findTestObject('Object Repository/GoToList/Page_LRS Connect/button_Go to Lists'))
 
-WebUI.setText(findTestObject('Object Repository/TC1_LoginSuperadmin/Page_LRS Connect/input_Password_j_password'), Password)
-
-WebUI.click(findTestObject('Object Repository/TC1_LoginSuperadmin/Page_LRS Connect/button_Login'))
-
-WebUI.closeBrowser()
+WebUI.verifyElementPresent(findTestObject('Object Repository/GoToList/Page_LRS Connect/span_Lists'), 0)
 

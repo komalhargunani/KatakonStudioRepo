@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC1_LoginSuperadmin</name>
+   <name>TC1_LoginAccountOwner</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>87e8fac4-7632-49f5-8949-1ddd4dc56c59</testCaseGuid>
+   <testCaseGuid>f96a06b5-0fa7-4ceb-90c6-097aba136c9a</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>68c7c3cf-0097-429e-b3b3-44a11d690035</id>
+      <id>5c139872-f209-4dbe-b9b1-9e2206567573</id>
+      <masked>false</masked>
+      <name>Url</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>485c0c18-ed97-4f4e-90a6-2e809889c941</id>
       <masked>false</masked>
       <name>Username</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>de493461-1a9a-47c0-91d0-32bb5505f498</id>
+      <id>3adbc00c-0cbf-4567-bd32-cc90a3147b1f</id>
       <masked>false</masked>
       <name>Password</name>
    </variable>

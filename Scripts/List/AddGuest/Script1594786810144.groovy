@@ -17,15 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Location/GoToList'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://testconnect.lrsus.com/')
+WebUI.click(findTestObject('Object Repository/List/AddGuest/Page_LRS Connect/button_Add Guest'))
 
-WebUI.setText(findTestObject('Object Repository/TC1_LoginSuperadmin/Page_LRS Connect/input_Email_j_username'), Username)
+WebUI.setText(findTestObject('Object Repository/List/AddGuest/Page_LRS Connect/input_Add Guest_firstName'), 'Komal')
 
-WebUI.setText(findTestObject('Object Repository/TC1_LoginSuperadmin/Page_LRS Connect/input_Password_j_password'), Password)
+WebUI.setText(findTestObject('Object Repository/List/AddGuest/Page_LRS Connect/input_Add Guest_lastName'), 'H')
 
-WebUI.click(findTestObject('Object Repository/TC1_LoginSuperadmin/Page_LRS Connect/button_Login'))
+WebUI.setText(findTestObject('Object Repository/List/AddGuest/Page_LRS Connect/input_Add Guest_partySize'), '7')
+
+WebUI.setText(findTestObject('Object Repository/List/AddGuest/Page_LRS Connect/input_Add Guest_contact'), '904-800-8378')
+
+WebUI.click(findTestObject('Object Repository/List/AddGuest/Page_LRS Connect/button_Add Guest_1'))
+
+WebUI.getText(findTestObject('List/AddGuest/Page_LRS Connect/Page_LRS Connect/div_2'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.takeScreenshot()
 
 WebUI.closeBrowser()
 

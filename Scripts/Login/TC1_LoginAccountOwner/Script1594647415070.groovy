@@ -19,13 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://testconnect.lrsus.com/')
+WebUI.navigateToUrl(Url)
 
-WebUI.setText(findTestObject('Object Repository/TC1_LoginSuperadmin/Page_LRS Connect/input_Email_j_username'), Username)
+WebUI.setText(findTestObject('Object Repository/TC2_LoginAccountOwner/Page_LRS Connect/input_Email_j_username'), Username)
 
-WebUI.setText(findTestObject('Object Repository/TC1_LoginSuperadmin/Page_LRS Connect/input_Password_j_password'), Password)
+WebUI.setText(findTestObject('Object Repository/TC2_LoginAccountOwner/Page_LRS Connect/input_Password_j_password'), Password)
 
-WebUI.click(findTestObject('Object Repository/TC1_LoginSuperadmin/Page_LRS Connect/button_Login'))
+WebUI.click(findTestObject('TC2_LoginAccountOwner/Page_LRS Connect/button_Login'))
+
+WebUI.verifyElementText(findTestObject('TC2_LoginAccountOwner/Page_LRS Connect/Page_LRS Connect/a_Locations'), 'Locations')
 
 WebUI.closeBrowser()
 
