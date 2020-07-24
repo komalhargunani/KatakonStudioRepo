@@ -33,7 +33,7 @@ WebUI.click(findTestObject('Object Repository/List/AddGuest/Page_LRS Connect/but
 
 WebUI.getText(findTestObject('List/AddGuest/Page_LRS Connect/Page_LRS Connect/div_2'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.takeScreenshot()
+WebUI.takeScreenshot('Test/Demo.png')
 
 WebUI.closeBrowser()
 
